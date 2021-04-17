@@ -1,16 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import StreamCreate from './streams/StreamCreate.js';
 import StreamEdit from './streams/StreamEdit.js';
 import StreamDelete from './streams/StreamDelete.js';
 import StreamList from './streams/StreamList.js';
 import StreamShow from './streams/StreamShow.js';
 import Header from './Header.js';
+import history from '../history.js';
 
 function App(props) {
 	return (
 		<div className="ui container">
-			<BrowserRouter>
+			<Router history={history}>
 				<div>
 					<Header></Header>
 					<Route path="/" exact component={StreamList}></Route>
@@ -20,7 +21,7 @@ function App(props) {
 						component={StreamCreate}
 					></Route>
 					<Route
-						path="/streams/edit"
+						path="/streams/edit/:id"
 						exact
 						component={StreamEdit}
 					></Route>
@@ -35,7 +36,7 @@ function App(props) {
 						component={StreamShow}
 					></Route>
 				</div>
-			</BrowserRouter>
+			</Router>
 		</div>
 	);
 }
