@@ -1,6 +1,6 @@
 ## Overview
 
-A simple app with that implements basic CRUD functionality for streams (specific content format to be decided).
+A simple app that implements basic CRUD functionality for streams (specific content format to be decided).
 
 ## Technologies
 
