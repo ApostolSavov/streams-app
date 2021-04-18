@@ -26,7 +26,7 @@ function App(props) {
 						component={StreamEdit}
 					></Route>
 					<Route
-						path="/streams/delete"
+						path="/streams/delete/:id"
 						exact
 						component={StreamDelete}
 					></Route>
