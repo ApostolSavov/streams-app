@@ -2,7 +2,9 @@
 
 A simple app that implements basic CRUD functionality for streams (specific content format to be decided).
 
-note: default urls and ports are set for local testing with OBS
+Made for the purpose of practicing a Udemy React course (project idea is not original)
+
+**Note**: default urls and ports are set for local testing with OBS
 
 ## Technologies
 
